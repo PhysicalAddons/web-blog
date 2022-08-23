@@ -1,4 +1,4 @@
 theme = "paper"
-baseURL = "http://www.phisicaladdons.com/blog"
+baseURL = "https://web-pablog.netlify.app/"
 languageCode = "en-us"
 title = "Blog"
