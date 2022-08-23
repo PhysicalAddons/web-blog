@@ -1,4 +1,4 @@
 theme = "paper"
-baseURL = "https://web-pablog.netlify.app/"
+baseURL = "https://pa-blog.netlify.app/"
 languageCode = "en-us"
 title = "Blog"
