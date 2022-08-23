@@ -2,7 +2,7 @@
 
 goal for this experiment is again automotive shader related - I want to achieve realistic microscratching on shiny surfaces. This is my first test. I am not entirely satisfied, but I am getting there eventually.
 
-![Untitled]("/blog/images/Untitled.png")
+![Untitled](/blog/images/Untitled.png)
 
 In order to get the anisotropic reflections, you need to calculate the scratch normals.
 Initially I started with a V shape groove, but a U shape gave me more ‘stable’ results with less sampling. Now only the groove direction towards the light source lights up.
