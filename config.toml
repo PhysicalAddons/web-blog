@@ -1,0 +1,4 @@
+theme = "paper"
+baseURL = "http://www.phisicaladdons.com/blog"
+languageCode = "en-us"
+title = "Blog"
