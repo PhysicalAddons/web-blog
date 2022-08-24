@@ -17,10 +17,10 @@ copyright = "Copyright © 2008–2019, Steve Francia and the lee.so; all rights 
   [[menu.main]]
     identifier = "producs"
     name = "Products"
-    url = "/psa/"
+    url = "https://www.physicaladdons.com/psa/"
     weight = 10
   [[menu.main]]
     identifier = "documentation"
     name = "Documentation"
-    url = "/psa/documentation/"
+    url = "../psa/documentation/"
     weight = 10
