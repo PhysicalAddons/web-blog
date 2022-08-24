@@ -7,7 +7,6 @@ tags = [
 
 ]
 +++
-# 002 Polarised light and thin-film interference
 
 Last day before I take my time off work and I spent it tinkering with car headlights again!
 This time I am exploring polarised light and thin-film interference on a transparent body in Blender. 
