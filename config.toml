@@ -11,3 +11,16 @@ copyright = "Copyright © 2008–2019, Steve Francia and the lee.so; all rights 
   twitter = 'PhysicalAddons'
   github = 'PhysicalAddons'
   instagram = 'physicaladdons'
+
+
+[menu]
+  [[menu.main]]
+    identifier = "producs"
+    name = "Products"
+    url = "/psa/"
+    weight = 10
+  [[menu.main]]
+    identifier = "documentation"
+    name = "Documentation"
+    url = "/psa/documentation/"
+    weight = 10
