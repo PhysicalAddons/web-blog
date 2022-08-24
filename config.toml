@@ -2,3 +2,12 @@ theme = "paper"
 baseURL = "https://physicaladdons.com/blog/"
 languageCode = "en-us"
 title = "Blog"
+author = "Physical Addons"
+copyright = "Copyright © 2008–2019, Steve Francia and the lee.so; all rights reserved."
+
+[params]
+  color = 'linen'
+
+  twitter = 'nanxiaobei'
+  github = 'nanxiaobei'
+  instagram = 'nan.xiaobei'
