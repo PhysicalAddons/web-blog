@@ -1,0 +1,5 @@
+[[redirects]]
+	from = "/*"
+	to = "https://www.physicaladdons.com/blog/:splat"
+	status = 301
+	force = true
