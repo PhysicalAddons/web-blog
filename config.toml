@@ -12,15 +12,20 @@ copyright = "Copyright © 2008–2019, Steve Francia and the lee.so; all rights 
   github = 'PhysicalAddons'
   instagram = 'physicaladdons'
 
+#  avatar = 'nanxiaobei@gmail.com'
+  name = 'Physical Addons'
+  bio = 'Discover physical properties of light and materials together with our R&D team.'
+
 
 [menu]
   [[menu.main]]
-    identifier = "producs"
+    identifier = "documentation"
+    name = "Documentation"
+    url = "https://www.physicaladdons.com/psa/documentation"
+    weight = 10
+  [[menu.main]]
+    identifier = "products"
     name = "Products"
     url = "https://www.physicaladdons.com/psa/"
     weight = 10
-  [[menu.main]]
-    identifier = "documentation"
-    name = "Documentation"
-    url = "../psa/documentation/"
-    weight = 10
+  
