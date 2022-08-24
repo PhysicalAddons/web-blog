@@ -21,7 +21,7 @@ copyright = "Copyright © 2008–2019, Steve Francia and the lee.so; all rights 
   [[menu.main]]
     identifier = "documentation"
     name = "Documentation"
-    url = "https://www.physicaladdons.com/psa/documentation"
+    url = "https://www.physicaladdons.com/psa/documentation/"
     weight = 10
   [[menu.main]]
     identifier = "products"

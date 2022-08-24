@@ -1,8 +1,13 @@
 +++
 title = "Micro scratches"
-description = "Hugo, the world's fastest framework for building websites"
-date = "2022-05-28"
 author = "Martins Upitis"
+date = "2019-03-11"
+description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+tags = [
+    "markdown",
+    "css",
+    "html",
+]
 +++
 
 # 001 Micro-scratches
