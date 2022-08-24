@@ -1,6 +1,13 @@
++++
+title = "Micro scratches"
+description = "Hugo, the world's fastest framework for building websites"
+date = "2022-05-28"
+author = "Martins Upitis"
++++
+
 # 001 Micro-scratches
 
-goal for this experiment is again automotive shader related - I want to achieve realistic microscratching on shiny surfaces. This is my first test. I am not entirely satisfied, but I am getting there eventually.
+Goal for this experiment is again automotive shader related - I want to achieve realistic microscratching on shiny surfaces. This is my first test. I am not entirely satisfied, but I am getting there eventually.
 
 ![Untitled](/blog/images/Untitled.png)
 
