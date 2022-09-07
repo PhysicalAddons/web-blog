@@ -1,10 +1,10 @@
 +++
 title = "Polarised light and thin-film interference"
 author = "Martins Upitis"
-date = "2022-05-12"
-description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+date = "2021-12-24"
+description = "I am exploring polarised light and thin-film interference on a transparent body in Blender."
 tags = [
-
+    "shader"
 ]
 +++
 

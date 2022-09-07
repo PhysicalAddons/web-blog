@@ -1,12 +1,12 @@
 +++
 title = "Micro scratches"
 author = "Martins Upitis"
-date = "2019-03-11"
-description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+date = "2022-02-12"
+description = "I want to achieve realistic microscratching on shiny surfaces. This is my first test. I am not entirely satisfied, but I am getting there eventually."
 tags = [
-    "markdown",
-    "css",
-    "html",
+    "microscratches",
+    "voronoi",
+    "shader",
 ]
 +++
 
