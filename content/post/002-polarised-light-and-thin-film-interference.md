@@ -17,27 +17,27 @@ Thank you
 
 for car model! Beautiful work as always. 
 
-![Untitled](/blog/images/002-polarised-light-and-thin-film-interface/porche-model-1.jpeg)
+![Untitled](/blog/images/002-polarised-light-and-thin-film-interference/porche-model-1.jpeg)
 
-![Untitled](/blog/images/002-polarised-light-and-thin-film-interface/porche-model-2.jpeg)
+![Untitled](/blog/images/002-polarised-light-and-thin-film-interference/porche-model-2.jpeg)
 
-![Untitled](/blog/images/002-polarised-light-and-thin-film-interface/porche-model-3.jpeg)
+![Untitled](/blog/images/002-polarised-light-and-thin-film-interference/porche-model-3.jpeg)
 
-![Untitled](/blog/images/002-polarised-light-and-thin-film-interface/porche-model-4.jpeg)
+![Untitled](/blog/images/002-polarised-light-and-thin-film-interference/porche-model-4.jpeg)
 
 Polarised light and Thin-film interference are not the same in terms of physics. One is caused by injection moulding of the plastic, other - by a very thin layer of material on the surface of another material. Both offer similar looks, so I use the same technique to model it.
 
-![Untitled](/blog/images/002-polarised-light-and-thin-film-interface/polarised-porche.jpeg)
+![Untitled](/blog/images/002-polarised-light-and-thin-film-interference/polarised-porche.jpeg)
 
 Here are two real-world examples. ‘Colorisation’ on the headlights are caused by polarisation while on windshield - by a defrosting coating. Most people, including me, mixes these, so for an artist like me, a single approach to tackle both problems, is working just fine!
 
-![Untitled](/blog/images/002-polarised-light-and-thin-film-interface/polarised-headlights.jpeg)
+![Untitled](/blog/images/002-polarised-light-and-thin-film-interference/polarised-headlights.jpeg)
 
-![Untitled](/blog/images/002-polarised-light-and-thin-film-interface/polarised-windscreen.jpeg)
+![Untitled](/blog/images/002-polarised-light-and-thin-film-interference/polarised-windscreen.jpeg)
 
 Mostly thin-film interference is a beautiful accident caused by an oily cleaning liquid or gasoline (in puddles), but if used on purpose, you can have very effective light blocking sunglasses or obnoxious car headlights. Also those anti-glare coatings on lenses work this way.
 
-![Untitled](/blog/images/002-polarised-light-and-thin-film-interface/polarised-glasses.jpeg)
+![Untitled](/blog/images/002-polarised-light-and-thin-film-interference/polarised-glasses.jpeg)
 
 Before I move on to ‘praxis’ part. I just want to establish some theory before, so you learn something too. I will keep it simple.
 
@@ -46,7 +46,7 @@ Also, this is a work in progress. I don’t know everything, I’m learning on t
 **I’ll start with light polarisation.**
 As I mentioned, it is an inevitable side-effect of moulding. It reveals the flow of liquid plastic and high tension points in the structure. It can easily be seen with a polarisation filter and any plastic object in your household.
 
-![Untitled](/blog/images/002-polarised-light-and-thin-film-interface/polarised-instruments.jpeg)
+![Untitled](/blog/images/002-polarised-light-and-thin-film-interference/polarised-instruments.jpeg)
 
 Polarisation difference from thin-film interference (TFI) is that the ‘colorisation’ is not in reflected light, but happens during transmittance. It makes the colouring look less vibrant than of TFI and can filter out the light completely.
 
@@ -54,11 +54,11 @@ Polarisation difference from thin-film interference (TFI) is that the ‘coloris
 
 Why we can see it with naked eye on some car headlights? My guess is that car manufacturers use polarised coating to filter light from projectors, but as a result - reveal the imperfections in the glass body. Perhaps also glass is polarising itself at some angles. Thoughts?
 
-![Untitled](/blog/images/002-polarised-light-and-thin-film-interface/polarised-headlights-2.jpeg)
+![Untitled](/blog/images/002-polarised-light-and-thin-film-interference/polarised-headlights-2.jpeg)
 
 Thin-film interference is more straightforward. It is a very thin ‘film’ of transparent material with a different density (and IOR) than the material it in contact with. The layer is so thin that light waves start ‘glitching’ from the phase change from surface reflections.
 
-![Untitled](/blog/images/002-polarised-light-and-thin-film-interface/polarised-gas.jpeg)
+![Untitled](/blog/images/002-polarised-light-and-thin-film-interference/polarised-gas.jpeg)
 
 Now we know a little more about the mechanics behind both effects, but I bet it does not help you replicate the effect now by yourself. And it is not really trivial too.
 Luckily smart people have figured it out before me and I can just take their findings and adapt for my needs.
@@ -77,12 +77,12 @@ That LUT is a plot of soap bubble TFI where horizontal (x) axis is film thicknes
 - in ‘X’ slot goes the ‘thickness’ value from 0.0 to 1.0
 - in ‘Y’ slot - Dot product of surface Normal and View Vectors.
 
-![Untitled](/blog/images/002-polarised-light-and-thin-film-interfacerainbow-y-lut-texture.jpeg)
+![Untitled](/blog/images/002-polarised-light-and-thin-film-interferencerainbow-y-lut-texture.jpeg)
 
 I forgot to mention that the apparent thickness of ‘film’ changes based the view angle of the surface. That’s why we need also ‘incident’ angle input on top of the ‘thickness’.
 That’s what makes the iconic color shift at grazing angles.
 
-![Untitled](/blog/images/002-polarised-light-and-thin-film-interface/polarised-boubble.jpeg)
+![Untitled](/blog/images/002-polarised-light-and-thin-film-interference/polarised-boubble.jpeg)
 
 - Add three shaders ‘Refraction BRDF’, ‘Glossy BRDF’ and a ‘MIX Shader’.
 - Add a Fresnel node and connect to ‘Mix Shader’ factor.
@@ -101,4 +101,4 @@ left - film thickness low
 mid - film thickness ~400nm
 right - film thickness modulated with regular Blender 3D noise
 
-![Screenshot 2022-08-22 at 12.08.34.png](/blog/images/002-polarised-light-and-thin-film-interface/porche-collague.jpeg)
+![Screenshot 2022-08-22 at 12.08.34.png](/blog/images/002-polarised-light-and-thin-film-interference/porche-collague.jpeg)
