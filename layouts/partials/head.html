@@ -73,12 +73,13 @@
   
     <!-- Misc -->
     {{ if or hugo.IsProduction (eq site.Params.env "production") }}
+    <script defer data-domain="physicaladdons.com" src="https://plausible.io/js/plausible.js"></script>
     <!---->
-    {{ template "_internal/google_analytics_async.html" . }}
+    <!-- {{ template "_internal/google_analytics_async.html" . }} -->
     <!---->
-    {{ template "_internal/google_analytics.html" . }}
+    <!-- {{ template "_internal/google_analytics.html" . }} -->
     <!---->
-    {{ template "_internal/google_news.html" . }}
+    <!-- {{ template "_internal/google_news.html" . }} -->
     <!---->
     {{ template "_internal/opengraph.html" . }}
     <!---->
