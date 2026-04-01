@@ -18,7 +18,7 @@ The system to distribute the stars was already discussed [here](https://www.patr
 One of the biggest changes to the stars is the scaling- or rather the lack thereof.
 You have probably noticed in PSA, that at long focal lengths, the stars become larger and blobby, this is because they had a fixed size/scale in the sky, no matter the zoom. This is unrealistic, as in reality, the stars are much smaller in the sky.
 So we decided to implement a system that scales the stars, to keep the visual size-ratio consistent, no matter what focal length you use.
-
+## This is without the implementation
+![Untitled](/blog/images/003-Stars/stars_scaling_bad.png)
+## This is with the implementation
 ![Untitled](/blog/images/003-Stars/stars_scaling.png)
-
-![Untitled](/blog/images/002-polarised-light-and-thin-film-interference/porche-model-1.jpeg)
