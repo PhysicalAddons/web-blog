@@ -18,4 +18,5 @@ The system to distribute the stars was already discussed [here](https://www.patr
 One of the biggest changes to the stars is the scaling- or rather the lack thereof.
 You have probably noticed in PSA, that at long focal lengths, the stars become larger and blobby, this is because they had a fixed size/scale in the sky, no matter the zoom. This is unrealistic, as in reality, the stars are much smaller in the sky.
 So we decided to implement a system that scales the stars, to keep the visual size-ratio consistent, no matter what focal length you use.
-![Untitled]([/blog/images/001-micro-scratches/red-scratches.jpeg](https://github.com/user-attachments/assets/c7e16a54-55c2-427e-91e6-6819b266e6f2))
+
+<img width="2481" height="1749" alt="stars_scaling" src="https://github.com/user-attachments/assets/29057d48-76bb-454d-856e-a37dfe1cebb1" />
