@@ -11,7 +11,7 @@ tags = [
 
 We want to share a little progeess update on stars, as they have been an essential part of our previous atmosphere integrations.
 
-For Physical Atmosphere, we wanted to go make sure that the stars feel better then ever, which includes various visual tweaks and additions.
+For Physical Atmosphere$^{2}$, we wanted to go make sure that the stars feel better then ever, which includes various visual tweaks and additions.
 
 The system to distribute the stars was already discussed [here](https://www.patreon.com/posts/my-god-its-full-131064614?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share)
 
