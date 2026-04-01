@@ -19,7 +19,13 @@ One of the biggest changes to the stars is the scaling- or rather the lack there
 You have probably noticed in PSA that at long focal lengths the stars become larger and blobby, this is because they had a fixed size/scale in the sky, no matter the zoom. This is unrealistic, as in reality, the stars are visually much smaller in the sky.
 So we decided to implement a system that scales the stars based on the FOV and screen resolution, to keep the visual size-ratio consistent, no matter what focal length you use.
 
-## This is without the implementation
+## Without auto-scaling
 ![Untitled](/blog/images/003-Stars/stars_scaling_bad.png)
-## This is with the implementation
+## With auto-scaling
 ![Untitled](/blog/images/003-Stars/stars_scaling.png)
+
+As you can see, the stars are scaled down proportionally to the zoom, instead of being rendered as big blobs thate take up most of the screen.
+
+The way this works, is that we read the viewport resolution (x,y) and view FOV (in radiants).
+![Untitled](/blog/images/003-Stars/node_scene.png)
+This allows us to dynamically change the scale of the stars based on the resolution, to keep the stars radius always only a few pixels wide and avoid "blobiness".
