@@ -9,15 +9,15 @@ tags = [
 ]
 +++
 
-We want to share a little progeess update on stars, as they have been an essential part of our previous atmosphere integrations.
+We wanted to share a quick progress update on stars, which have always been an important part of our atmosphere integrations.
+For Physical Atmosphere², we want to make sure that stars feel better than ever. That means a range of visual improvements and new additions in the backend.
 
-For Physical Atmosphere², we wanted to make sure that the stars feel better then ever, which includes various visual tweaks and additions.
+The system to distribute the stars was already covered [here on a Patreon post](https://www.patreon.com/posts/my-god-its-full-131064614?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share), so I won't go into too much detail about it again here.
 
-The system to distribute the stars was already discussed [here on a Patreon post](https://www.patreon.com/posts/my-god-its-full-131064614?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share).
+One of the most significant changes is how stars are now scaled, or more precisely, how they no longer "scale".
+If you've used PSA at longer focal lengths, you've probably noticed stars growing large and blobby. That happened because their size was fixed in screen space regardless of zoom level, which isn't physically accurate. In reality, stars take up an extremely small angle in the sky and only appear as tiny dots even at bigger focal lengths.
 
-One of the biggest changes to the stars is the scaling- or rather the lack thereof.
-You have probably noticed in PSA that at long focal lengths the stars become larger and blobby, this is because they had a fixed size/scale in the sky, no matter the zoom. This is unrealistic, as in reality, the stars are visually much smaller in the sky.
-So we decided to implement a system that scales the stars based on the FOV and screen resolution, to keep the visual size-ratio consistent, no matter what focal length you use.
+To fix this, we implemented a system that scales star size based on both the FOV and the current screen resolution, keeping the visual size ratio consistent across all focal lengths. To match the realistic angular size of stars, we permanently scale them to merely a few pixels.
 
 ## Without auto-scaling
 ![Untitled](/blog/images/003-Stars/stars_scaling_bad.png)
