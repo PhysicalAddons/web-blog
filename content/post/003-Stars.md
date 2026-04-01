@@ -4,7 +4,8 @@ author = "Davide Ebner"
 date = "2026-04-01"
 description = "I am exploring polarised light and thin-film interference on a transparent body in Blender."
 tags = [
-    "shader","stars"
+    "shader",
+    "stars",
 ]
 +++
 
