@@ -20,3 +20,5 @@ You have probably noticed in PSA, that at long focal lengths, the stars become l
 So we decided to implement a system that scales the stars, to keep the visual size-ratio consistent, no matter what focal length you use.
 
 <img width="2481" height="1749" alt="stars_scaling" src="https://github.com/user-attachments/assets/29057d48-76bb-454d-856e-a37dfe1cebb1" />
+
+![Untitled]("https://github.com/user-attachments/assets/29057d48-76bb-454d-856e-a37dfe1cebb1")
