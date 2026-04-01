@@ -9,7 +9,6 @@ tags = [
 ]
 +++
 
-# Physical Atmosphere - Stars
 We want to share a little progeess update on stars, as they have been an essential part of our previous atmosphere integrations.
 
 For Physical Atmosphere, we wanted to go make sure that the stars feel better then ever, which includes various visual tweaks and additions.
