@@ -1,9 +1,11 @@
 +++
-title = "Star rendering enhancements"
+title = "Sharp Stars at Every Zoom Level"
 author = "Davide Ebner"
 date = "2026-04-01"
-description = "We worked on improving the visual fidelity of the stars for Physical Atmosphere²."
+description = "How auto-scaling keeps stars looking right no matter the zoom level or resolution.."
 tags = [
+    "Blender",
+    "Atmosphere²",
     "shader",
     "stars",
 ]
