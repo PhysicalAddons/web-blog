@@ -1,3 +1,13 @@
++++
+title = "Star enhancements"
+author = "Davide Ebner"
+date = "2026-04-01"
+description = "I am exploring polarised light and thin-film interference on a transparent body in Blender."
+tags = [
+    "shader","stars"
+]
++++
+
 # Physical Atmosphere - Stars
 We want to share a little progeess update on stars, as they have been an essential part of our previous atmosphere integrations.
 
