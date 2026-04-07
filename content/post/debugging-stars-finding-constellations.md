@@ -20,7 +20,7 @@ As seen in the earlier [blog post about the stars themselves](https://www.physic
 Especially, when viewing from the location of a real place on earth. If it does not align, people would notice.
 Eyeballing and estimating would just be cheating.
 
-So out of the necessity to debug the stars, we added a viewport-only overly of all constellations.
+So out of the necessity to debug the stars, we added a viewport-only overlay of all constellations.
 It is not an image overlay, but renders a graphical overlay of connections that are based on a database.
 
 ![Untitled](/blog/images/debugging_stars/constellations.png)
