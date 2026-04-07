@@ -26,8 +26,8 @@ To fix this, we implemented a system that scales star size based on both the FOV
 ## With auto-scaling
 ![Untitled](/blog/images/003-Stars/stars_scaling.png)
 
-As you can see, the stars are scaled down proportionally to the zoom, instead of being rendered as big blobs thate take up most of the screen.
+As you can see, the stars are scaled down proportionally to the zoom, instead of being rendered as big blobs that take up most of the screen.
 
-The way this works, is that we read the viewport resolution (x,y) and view FOV (in radiants).
+The way this works is, that we read the viewport resolution (x,y) and view FOV (in radiants).
 ![Untitled](/blog/images/003-Stars/node_scene.png)
 This allows us to dynamically change the scale of the stars based on the resolution, to keep the stars radius always only a few pixels wide and avoid "blobiness".
