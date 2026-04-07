@@ -1,7 +1,7 @@
 +++
 title = "Debugging Stars, Finding Constellations"
 author = "Davide Ebner"
-date = "2026-04-08"
+date = "2026-04-02"
 description = "How we went from a debugging overlay to a cool feature implementation"
 tags = [
     "Blender",
