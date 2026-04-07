@@ -33,4 +33,4 @@ We moved the new calculation method to Phython, as it is more straightforward to
 Now, eclipses line up perfectly within a meter of precision and look as expected for past and future eclipses.
 It perfectly ties together the 3D-spherical celestial objects and allows the recreation of beautiful solar- and moon eclipses!
 
-![Untitled](/blog/static/images/orbit_precision/eclipse.png)
+![Untitled](/blog/images/orbit_precision/eclipse.png)
