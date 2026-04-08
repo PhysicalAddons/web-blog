@@ -22,9 +22,9 @@ If you've used PSA at longer focal lengths, you've probably noticed stars growin
 To fix this, we implemented a system that scales star size based on both the FOV and the current screen resolution, keeping the visual size ratio consistent across all focal lengths. To match the realistic angular size of stars, we permanently scale them to merely a few pixels.
 
 ## Without auto-scaling
-![Untitled](/blog/images/003-Stars/stars_scaling_bad.png)
+![Untitled](/blog/images/003-Stars/stars_scaling_bad.webp)
 ## With auto-scaling
-![Untitled](/blog/images/003-Stars/stars_scaling.png)
+![Untitled](/blog/images/003-Stars/stars_scaling.webp)
 
 As you can see, the stars are scaled down proportionally to the zoom, instead of being rendered as big blobs that take up most of the screen.
 
