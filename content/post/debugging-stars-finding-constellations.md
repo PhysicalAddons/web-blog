@@ -27,7 +27,7 @@ This eliminates resolution limitations and keeps the overlay crisp.
 ![Untitled](/blog/images/debugging_stars/constellations.png)
 
 But thanks to this, we realized that our sky was flipped.
-The overlay is currently drawn at the same distance as the sun, we encountered severe precision issues with darther distances.
+The overlay is currently drawn at the same distance as the sun, we encountered severe precision issues with farther distances.
 
 With a new found obsession with overlays, we implemented some quality of life features to make it easier than ever to keep the overview of the sky.
 
