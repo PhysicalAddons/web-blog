@@ -8,7 +8,7 @@ tags = [
     "Atmosphere²",
     "shader",
     "stars",
-    "debug".
+    "debug",
 ]
 +++
 
