@@ -31,3 +31,5 @@ As you can see, the stars are scaled down proportionally to the zoom, instead of
 The way this works is, that we read the viewport resolution (x,y) and view FOV (in radiants).
 ![Untitled](/blog/images/003-Stars/node_scene.png)
 This allows us to dynamically change the scale of the stars based on the resolution, to keep the stars radius always only a few pixels wide and avoid "blobiness".
+
+![Untitled](/blog/images/003-Stars/stars.jpg)
