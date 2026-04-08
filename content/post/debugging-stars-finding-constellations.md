@@ -24,7 +24,7 @@ So out of the necessity to debug the stars, we added a viewport-only overlay of 
 It is not an image overlay, but renders connections that are based on a database.
 This eliminates resolution limitations and keeps the overlay crisp.
 
-![Untitled](/blog/images/debugging_stars/constellations.webp)
+![Untitled](/blog/images/debugging_stars/constellations.png)
 
 But thanks to this, we realized that our sky was flipped.
 The overlay is currently drawn at the same distance as the sun, we encountered severe precision issues with farther distances.
@@ -33,4 +33,4 @@ With a new found obsession with overlays, we implemented some quality of life fe
 
 Note that there are no other planets added to the scene yet, so there is no orbital data to properly draw the overlays.
 
-![Untitled](/blog/images/debugging_stars/all.webp)
+![Untitled](/blog/images/debugging_stars/all.png)
