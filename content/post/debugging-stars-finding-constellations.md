@@ -31,6 +31,6 @@ The overlay is currently drawn at the same distance as the sun, we encountered s
 
 With a new found obsession with overlays, we implemented some quality of life features to make it easier than ever to keep the overview of the sky.
 
-Note that there are no other planets added to the scene yet, so there is no orbital data to properly draw the overlays.
+Note that there are no other planets added to the scene yet, so the orbit overlays are purely cosmetic at the moment.
 
 ![Untitled](/blog/images/debugging_stars/all.png)
