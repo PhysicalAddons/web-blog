@@ -5,6 +5,8 @@
   
     <!-- Title -->
     <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}</title>
+    <!-- Canonical -->
+    <link rel="canonical" href="{{ .Permalink }}" />
   
     <!-- Meta -->
     <meta name="theme-color" />
