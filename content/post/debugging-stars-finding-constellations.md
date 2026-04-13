@@ -34,3 +34,5 @@ With a new found obsession with overlays, we implemented some quality of life fe
 Note that there are no other planets added to the scene yet, so the orbit overlays are purely cosmetic at the moment.
 
 ![Untitled](/blog/images/debugging_stars/all.png)
+
+
