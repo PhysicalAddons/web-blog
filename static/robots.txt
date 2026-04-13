@@ -1,0 +1,6 @@
+# pa-blog.netlify.app is a Hugo blog proxied through
+# physicaladdons.com/blog/ (status 200 proxy via Netlify)
+# This blocks direct Google access to the subdomain
+# to avoid duplicate content. Canonical tags point to physicaladdons.com
+User-agent: *
+Disallow: /
