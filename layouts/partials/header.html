@@ -1,0 +1,90 @@
+<header class="site-header">
+  <nav class="nav-primary nav-primary--closed" aria-label="Primary">
+    <a class="nav-primary__logo" href="https://www.physicaladdons.com/psa/" aria-label="Physical Addons">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="m266.669 400.001 133.333-66.666V216.668l-133.333 66.667v116.666ZM133.333 0 0 66.667V400l133.333-66.667v-66.666h133.334L400 200V0H133.333Zm0 100h133.334v66.667H133.333V100Z"
+        />
+      </svg>
+    </a>
+    
+    <button
+      class="nav-primary__toggle"
+      aria-controls="primary-nav-links"
+      aria-expanded="false"
+      aria-label="Toggle primary navigation"
+      type="button"
+    >
+      <svg class="ham" viewBox="0 0 100 100" width="64" aria-hidden="true">
+        <path class="ham__line ham__line--top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"></path>
+        <path class="ham__line ham__line--middle" d="m 70,50 h -40"></path>
+        <path class="ham__line ham__line--bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"></path>
+      </svg>
+    </button>
+
+    <div class="nav-primary__collapse" id="primary-nav-links">
+      <div class="nav-primary__main">
+        <a href="https://www.physicaladdons.com/pco/" class="nav-primary__link">Planets</a>
+        <a href="https://www.physicaladdons.com/psa/" class="nav-primary__link">Atmosphere</a>
+        <a href="https://www.physicaladdons.com/pow/" class="nav-primary__link">Oceans</a>
+      </div>
+      <div class="nav-primary__secondary">
+        <a href="{{ `/` | absURL }}" class="nav-primary__link nav-primary__link--muted">Blog</a>
+        <a href="https://www.physicaladdons.com/psa/documentation/" class="nav-primary__link">Documentation</a>
+      </div>
+    </div>
+  </nav>
+
+  {{ if .IsPage }}
+  <div class="site-header__meta">
+    <p class="site-header__crumb">Blog / {{ .Title }}</p>
+    <div class="site-header__divider" aria-hidden="true"></div>
+  </div>
+  {{ end }}
+
+  <script>
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    const navPrimary = document.querySelector('.nav-primary');
+    const btnMenu = document.querySelector('.nav-primary__toggle');
+    if (navPrimary && btnMenu) {
+      btnMenu.addEventListener('click', () => {
+        const isExpanded = btnMenu.getAttribute('aria-expanded') === 'true';
+        const nextState = !isExpanded;
+        btnMenu.setAttribute('aria-expanded', nextState ? 'true' : 'false');
+        navPrimary.classList.toggle('nav-primary--open', nextState);
+        navPrimary.classList.toggle('nav-primary--closed', !nextState);
+        document.body.classList.toggle('navigation-active', nextState);
+      });
+    }
+
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = `{{ $.Scratch.Get "bg_color" }}`.replace(/"/g, '');
+    const setDark = (isDark) => {
+      if (metaTheme) {
+        metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      }
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkVal = localStorage.getItem('dark');
+    setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    const btnDark = document.querySelector('.btn-dark');
+    if (btnDark) {
+      btnDark.addEventListener('click', () => {
+        setDark(localStorage.getItem('dark') !== 'true');
+      });
+    }
+  </script>
+</header>

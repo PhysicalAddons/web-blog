@@ -2,6 +2,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   
     <!-- Title -->
     <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}</title>
@@ -12,10 +18,10 @@
     <meta name="theme-color" />
     {{ if eq .Kind "page" }}
     <meta name="description" content="{{ .Summary }}" />
-    <meta name="author" content="{{ .Params.Author | default site.Author.name }}" />
+    <meta name="author" content="{{ .Params.Author | default site.Params.name | default site.Title }}" />
     {{ else }}
     <meta name="description" content="{{ site.Params.description }}" />
-    <meta name="author" content="{{ site.Author.name }}" />
+    <meta name="author" content="{{ site.Params.name | default site.Title }}" />
     {{ end }}
   
     <!-- Styles & Scripts -->
@@ -77,12 +83,9 @@
     {{ if or hugo.IsProduction (eq site.Params.env "production") }}
     <script defer data-domain="physicaladdons.com" src="/js/script.js"></script>
     <!---->
-    <!-- {{ template "_internal/google_analytics_async.html" . }} -->
-    <!---->
-    <!-- {{ template "_internal/google_analytics.html" . }} -->
-    <!---->
-    <!-- {{ template "_internal/google_news.html" . }} -->
-    <!---->
+    {{/* template "_internal/google_analytics_async.html" . */}}
+    {{/* template "_internal/google_analytics.html" . */}}
+    <!-- Hugo v0.160+ no longer provides _internal/google_news.html -->
     {{ template "_internal/opengraph.html" . }}
     <!---->
     {{ template "_internal/schema.html" . }}

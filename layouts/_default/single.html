@@ -1,0 +1,56 @@
+{{ define "main" }}
+
+<article class="single-article">
+  <header class="single-article__header">
+    {{ $label := "Research" }}
+    {{ with .Params.categories }}
+      {{ $label = index . 0 }}
+    {{ else }}
+      {{ with .Params.tags }}
+        {{ $label = index . 0 }}
+      {{ end }}
+    {{ end }}
+    <p class="single-article__label">{{ $label | title }}</p>
+    <h1 class="single-article__title">{{ .Title }}</h1>
+    {{ if .Date }}
+    <time class="single-article__date">{{ .Date | time.Format "02.01.2006" }}</time>
+    {{ end }}
+  </header>
+
+  <section class="single-article__content">{{ .Content }}</section>
+
+  <!-- Post Tags -->
+  {{ if .Params.tags }}
+  <footer class="single-article__tags mt-12 flex flex-wrap">
+    {{ range .Params.tags }} {{ $href := print (absURL "tags/") (urlize .) }}
+    <a
+      class="mr-1.5 mb-1.5 rounded-lg bg-black/[3%] px-5 py-2 no-underline dark:bg-white/[8%]"
+      href="{{ $href }}"
+      >{{ . }}</a
+    >
+    {{ end }}
+  </footer>
+  {{ end }}
+
+  <!-- Post Nav -->
+  {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}<!---->
+  {{ if and (gt (len $pages) 1) (in $pages . ) }}
+  <nav class="single-article__post-nav mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    {{ with $pages.Next . }}
+    <a class="flex w-1/2 items-center p-6 pr-3 no-underline" href="{{ .Permalink }}"
+      ><span class="mr-1.5">←</span><span>{{ .Name }}</span></a
+    >
+    {{ end }}<!---->
+    {{ with $pages.Prev . }}
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end p-6 pl-3 no-underline"
+      href="{{ .Permalink }}"
+      ><span>{{ .Name }}</span><span class="ml-1.5">→</span></a
+    >
+    {{ end }}
+  </nav>
+  {{ end }}
+
+</article>
+
+{{ end }}

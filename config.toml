@@ -2,7 +2,8 @@ theme = "paper"
 baseURL = "https://physicaladdons.com/blog/"
 languageCode = "en-us"
 title = "Blog"
-author = "Physical Addons"
+[author]
+  name = "Physical Addons"
 copyright = "Copyright © 2008–2019, Steve Francia and the lee.so; all rights reserved."
 
 [params]
