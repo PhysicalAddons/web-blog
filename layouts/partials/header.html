@@ -30,15 +30,18 @@
         <a href="https://www.physicaladdons.com/pow/" class="nav-primary__link">Oceans</a>
       </div>
       <div class="nav-primary__secondary">
-        <a href="{{ `/` | absURL }}" class="nav-primary__link nav-primary__link--muted">Blog</a>
-        <a href="https://www.physicaladdons.com/psa/documentation/" class="nav-primary__link">Documentation</a>
+        <a href="{{ site.Home.RelPermalink }}" class="nav-primary__link nav-primary__link--muted">Blog</a>
       </div>
     </div>
   </nav>
 
   {{ if .IsPage }}
   <div class="site-header__meta">
-    <p class="site-header__crumb">Blog / {{ .Title }}</p>
+    <nav class="site-header__crumb" aria-label="Breadcrumb">
+      <a class="site-header__crumb-link" href="{{ site.Home.RelPermalink }}">Blog</a>
+      <span class="site-header__crumb-separator" aria-hidden="true">/</span>
+      <span class="site-header__crumb-current">{{ .Title }}</span>
+    </nav>
     <div class="site-header__divider" aria-hidden="true"></div>
   </div>
   {{ end }}
