@@ -12,7 +12,7 @@ tags = [
 ]
 +++
 
-# Volumetric Clouds in Atmosphere² - Where We Started
+## Volumetric Clouds in Atmosphere² - Where We Started
  
 One of the long-standing goals for Atmosphere² has been a real-time volumetric cloud system, fully integrated into the world shader instead of relying on the render engine. 
 The challenge was always feasibility: clouds done right are expensive, both in rendering cost and development time. But as work on Atmosphere² ramped up, it became clear they weren't optional. Believable skies need believable clouds.
