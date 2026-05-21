@@ -85,4 +85,7 @@ The new approach, using more sophisticated functions to further approximate the 
 
 ![Untitled](/blog/images/clouds_research/shader_new.webp)
 
+
+And here is Mārtiņš observing clouds on the roof
+
 ![Untitled](/blog/images/clouds_research/IMG_6025.jpg)
