@@ -29,6 +29,12 @@ With shader code accessible, it gave us a usable reference for how those ideas t
 ![Untitled](/blog/images/clouds_research/ksa.webp)
  
 Guerrilla Games also published a [detailed writeup on their cloud rendering approach](https://www.guerrilla-games.com/read/synthesizing-realistic-clouds-for-video-games), which is thorough and worth reading, though it leans heavily theoretical and doesn't map cleanly onto a practical system without significant interpretation.
+
+Another awesome reference source is [GeoSpacal clouds](https://takram-design-engineering.github.io/three-geospatial/?path=/story/clouds-3d-tiles-renderer-integration--fuji), which is apart of the [Geospatial Rendering](https://github.com/takram-design-engineering/three-geospatial/) library.
+
+![Untitled](/blog/images/clouds_research/Storybook.webp)
+
+The speed and customizability of the clouds is very impressive.
  
 ## Digital ground-truth via pathtracing
  
@@ -71,10 +77,12 @@ It is very important to mention that this is still work in progress and all curr
 
 The progress is visible nonetheless, as you can see in the comparison below.
 
-- Old approach
+The old approach without proper reference adherence:
 
 ![Untitled](/blog/images/clouds_research/shader_old.webp)
 
-- New implementation
+The new approach, using more sophisticated functions to further approximate the references as close as possible.
 
 ![Untitled](/blog/images/clouds_research/shader_new.webp)
+
+![Untitled](/blog/images/clouds_research/IMG_6025.jpg)
