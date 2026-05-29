@@ -15,7 +15,15 @@
     <link rel="canonical" href="{{ .Permalink }}" />
   
     <!-- Meta -->
-    <meta name="theme-color" />
+    <meta name="theme-color" content="#000" />
+    <script>
+      (function () {
+        try {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('dark', 'true');
+        } catch (e) {}
+      })();
+    </script>
     {{ if eq .Kind "page" }}
     <meta name="description" content="{{ .Summary }}" />
     <meta name="author" content="{{ .Params.Author | default site.Params.name | default site.Title }}" />

@@ -64,30 +64,5 @@
         document.body.classList.toggle('navigation-active', nextState);
       });
     }
-
-    const metaTheme = document.querySelector('meta[name="theme-color"]');
-    const lightBg = `{{ $.Scratch.Get "bg_color" }}`.replace(/"/g, '');
-    const setDark = (isDark) => {
-      if (metaTheme) {
-        metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
-      }
-      htmlClass[isDark ? 'add' : 'remove']('dark');
-      localStorage.setItem('dark', isDark);
-    };
-
-    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    const darkVal = localStorage.getItem('dark');
-    setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
-
-    darkScheme.addEventListener('change', (event) => {
-      setDark(event.matches);
-    });
-
-    const btnDark = document.querySelector('.btn-dark');
-    if (btnDark) {
-      btnDark.addEventListener('click', () => {
-        setDark(localStorage.getItem('dark') !== 'true');
-      });
-    }
   </script>
 </header>
